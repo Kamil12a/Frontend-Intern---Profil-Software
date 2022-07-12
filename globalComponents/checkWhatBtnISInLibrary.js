@@ -1,4 +1,4 @@
-import { setArticlesInLibrary } from "../main-page.js";
+import { setArticlesInLibrary } from "../Pages/Main-page/main-page.js";
 export function checkWhatBtnIsInLibrary() {
   const items = { ...localStorage };
   let allArticlesInLibrary = [];

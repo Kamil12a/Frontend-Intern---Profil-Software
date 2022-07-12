@@ -23,7 +23,7 @@
   width: 60px;
 }
 
-.container-articles {
+.container-articles,.container-articles-library {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -73,15 +73,10 @@
   padding: 10px 16px;
   transition: color 100ms;
 }
-.container-amount-how-much-articles {
-}
+
 .go-to-library-btn {
   position: absolute;
   top: 10%;
   right: 10%;
   background-color: green;
-}
-.go-to-library-btn-link {
-  color: white;
-  text-decoration: none;
 }
