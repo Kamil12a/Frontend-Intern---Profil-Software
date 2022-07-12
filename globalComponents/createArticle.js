@@ -2,6 +2,7 @@ import { addToLibraryButton } from "../Pages/Main-page/components/btnAddToLibrar
 
 const container_articles = document.querySelector(".container-articles");
 export function createArticle(single_Article) {
+  
   let container_articles_single_article = document.createElement("div");
   let title = document.createElement("h4");
   let newsSite = document.createElement("a");
@@ -11,8 +12,9 @@ export function createArticle(single_Article) {
   title.innerText = single_Article.title;
   newsSite.href = single_Article.url;
   newsSite.innerHTML = "News Site: " + single_Article.newsSite;
-  publishedAt.innerHTML = single_Article.publishedAt;
-  summary.innerHTML = single_Article.summary;
+  publishedAt.innerHTML =
+    "published at: " + single_Article.publishedAt.substr(0, 10);
+  summary.innerHTML = "summary: " + single_Article.summary;
 
   container_articles_single_article.classList.add(
     "container_articles_single_article"
