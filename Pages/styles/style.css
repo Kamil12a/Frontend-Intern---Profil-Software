@@ -9,8 +9,8 @@
 .container-amount_articles {
   display: flex;
   align-items: center;
-  margin-top:30px;
-  margin-left:30px
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .container-amount_articles > * {
   margin-right: 5px;
@@ -23,7 +23,7 @@
   width: 60px;
 }
 
-.container-articles,.container-articles-library {
+.container-articles {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -59,8 +59,21 @@
 
   justify-content: center;
 }
+.container-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.container-btn-sort-byPublished{
+  background-color: green;
+}
+.container-btn-sort-byTitle{
+  background-color: red;
+}
 .container_articles_single_article_btn_box_addLibrary,
-.go-to-library-btn {
+.go-to-library-btn,
+.container-btn-sort-byPublished,
+.container-btn-sort-byTitle {
   border-radius: 8px;
   border-style: none;
   color: #ffffff;
@@ -79,4 +92,8 @@
   top: 10%;
   right: 10%;
   background-color: green;
+}
+.go-to-library-btn-link {
+  color: white;
+  text-decoration: none;
 }

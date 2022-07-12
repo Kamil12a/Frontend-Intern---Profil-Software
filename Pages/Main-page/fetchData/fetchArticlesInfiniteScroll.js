@@ -1,4 +1,4 @@
-import { createArticle } from "../../../globalComponents/createArticle.js";
+import { createArticle } from "../../global-components/createArticle.js";
 import { pageNumber } from "../main-page.js";
 import { setAmountOfArticles } from "../main-page.js";
 
