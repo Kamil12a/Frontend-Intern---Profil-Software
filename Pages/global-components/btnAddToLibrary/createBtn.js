@@ -24,7 +24,6 @@ export function createBtn(
     buttonAddLibrary.innerHTML = "Delete from library";
     buttonAddLibrary.style.backgroundColor = "red";
   } else {
-    console.log(articlesInLibrary)
     buttonAddLibrary.name = "isntInLibrary";
     buttonAddLibrary.innerHTML = "Add to library";
     buttonAddLibrary.style.backgroundColor = "green";
