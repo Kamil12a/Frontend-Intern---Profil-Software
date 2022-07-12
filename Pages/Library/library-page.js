@@ -9,10 +9,10 @@ const btnSortByTitle = document.querySelector(".container-btn-sort-byTitle");
 const btnSortbyPublished = document.querySelector(
   ".container-btn-sort-byPublished"
 );
-export const items = { ...localStorage };
+export const articlesInLocalStorage = { ...localStorage };
 window.onload = function () {
   checkWhatBtnIsInLibrary();
-  Object.values(items).forEach((article) => {
+  Object.values(articlesInLocalStorage).forEach((article) => {
     createArticle(JSON.parse(article));
   });
 };

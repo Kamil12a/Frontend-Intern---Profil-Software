@@ -1,11 +1,11 @@
 import { createArticle } from "../../global-components/createArticle.js";
-import { items } from "../library-page.js";
+import { articlesInLocalStorage } from "../library-page.js";
 
 const container_articles = document.querySelector(".container-articles");
 
 export const sortByPublished = () => {
   let articles = [];
-  Object.values(items).forEach((article) => {
+  Object.values(articlesInLocalStorage).forEach((article) => {
     articles.push(JSON.parse(article));
   });
   articles.sort(compare);
