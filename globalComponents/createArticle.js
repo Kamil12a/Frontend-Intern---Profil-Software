@@ -1,4 +1,4 @@
-import { addToLibraryButton } from "./btnAddToLibrary/addToLibraryButton.js";
+import { addToLibraryButton } from "../Pages/Main-page/components/btnAddToLibrary/addToLibraryButton.js";
 
 const container_articles = document.querySelector(".container-articles");
 export function createArticle(single_Article) {

@@ -1,10 +1,13 @@
 import { pageNumber } from "../main-page.js";
-import { removeAllChildNodes } from "./removeAllChildren.js";
 const containter_amount_articles = document.querySelector(
   ".container-amount_articles"
 );
 export function displayFunction(count) {
-  removeAllChildNodes(containter_amount_articles)
+  while (containter_amount_articles.firstChild) {
+    containter_amount_articles.removeChild(
+      containter_amount_articles.firstChild
+    );
+  }
   let title = document.createElement("h3");
   let amount = document.createElement("p");
   title.innerHTML = "Amount of articles:";
