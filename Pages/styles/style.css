@@ -41,6 +41,9 @@
 .container_articles_single_article > * {
   margin: 20px;
 }
+.container_articles_single_article_summary{
+  margin-bottom: 0;
+}
 .container_articles_single_article_title {
   text-align: center;
 }
@@ -60,6 +63,9 @@
   justify-content: center;
 }
 .container-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   position: absolute;
   top: 20px;
   left: 20px;
@@ -74,7 +80,8 @@
 .go-to-library-btn,
 .container-btn-sort-byPublished,
 .container-btn-sort-byTitle,
-.container-btn-sort-navigateMain {
+.container-btn-sort-navigateMain,
+.btn-summary {
   border-radius: 8px;
   border-style: none;
   color: #ffffff;
@@ -87,7 +94,8 @@
   padding: 10px 16px;
   transition: color 100ms;
 }
-.container-btn-sort-navigateMain{
+.container-btn-sort-navigateMain,
+.btn-summary {
   background-color: #999;
 }
 .go-to-library-btn {
@@ -99,4 +107,27 @@
 .go-to-library-btn-link {
   color: white;
   text-decoration: none;
+}
+
+@media (max-width: 720px) {
+  .container_articles_single_article {
+    width: 280px;
+  }
+  .container-btn-sort-byPublished,
+  .container-btn-sort-byTitle,
+  .container-btn-sort-navigateMain {
+    width: 100px;
+    height: 50px;
+    vertical-align: center;
+    text-align: center;
+  }
+  .container-btn {
+    left: 0;
+    width: 100vw;
+    gap: 0;
+    justify-content: space-around;
+  }
+  .go-to-library-btn {
+    top: 125px;
+  }
 }
