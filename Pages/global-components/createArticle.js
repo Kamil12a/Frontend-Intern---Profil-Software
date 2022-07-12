@@ -1,8 +1,7 @@
-import { addToLibraryButton } from "../Pages/Main-page/components/btnAddToLibrary/addToLibraryButton.js";
+import { addToLibraryButton } from "./btnAddToLibrary/addToLibraryButton.js";
 
 const container_articles = document.querySelector(".container-articles");
 export function createArticle(single_Article) {
-  
   let container_articles_single_article = document.createElement("div");
   let title = document.createElement("h4");
   let newsSite = document.createElement("a");
