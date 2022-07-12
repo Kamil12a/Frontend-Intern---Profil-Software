@@ -50,8 +50,7 @@
 
   justify-content: center;
 }
-.container_articles_single_article_btn_box_addLibrary {
-  background-color: #77c66e;
+.container_articles_single_article_btn_box_addLibrary,.go-to-library-btn {
   border-radius: 8px;
   border-style: none;
   color: #ffffff;
@@ -64,7 +63,13 @@
   padding: 10px 16px;
   transition: color 100ms;
 }
-.container_articles_single_article_btn_box_addLibrary:hover,
-.container_articles_single_article_btn_box_addLibrary:focus {
-  background-color: #549c4d;
+.go-to-library-btn{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  background-color: green;
+}
+.go-to-library-btn-link{
+  color: white;
+  text-decoration: none;
 }
