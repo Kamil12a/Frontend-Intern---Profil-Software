@@ -1,5 +1,5 @@
 import { addToLibraryButton } from "./btnAddToLibrary/addToLibraryButton.js";
-
+import { summarySubStr } from "./summarySubString.js";
 const container_articles = document.querySelector(".container-articles");
 export function createArticle(single_Article) {
   let container_articles_single_article = document.createElement("div");
@@ -13,8 +13,6 @@ export function createArticle(single_Article) {
   newsSite.innerHTML = "News Site: " + single_Article.newsSite;
   publishedAt.innerHTML =
     "published at: " + single_Article.publishedAt.substr(0, 10);
-  summary.innerHTML = "summary: " + single_Article.summary;
-
   container_articles_single_article.classList.add(
     "container_articles_single_article"
   );
@@ -27,7 +25,9 @@ export function createArticle(single_Article) {
   container_articles_single_article.appendChild(newsSite);
   container_articles_single_article.appendChild(publishedAt);
   container_articles_single_article.appendChild(summary);
+  summarySubStr(single_Article, summary, container_articles_single_article);
 
   addToLibraryButton(container_articles_single_article, single_Article);
   container_articles.appendChild(container_articles_single_article);
 }
+
